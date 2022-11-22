@@ -11,6 +11,13 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="app"></div>
+    <div class="app">
+        <ul>
+            <li v-for="(email, i) in arrEmail">
+                {{arrEmail[i]}}
+            </li>
+            <button @click="emails"> GENERA EMAILS</button>
+        </ul>
+    </div>
 </body>
 </html>
